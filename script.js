@@ -31,9 +31,46 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    initMarbleBackground();
+    // Modal Handler for "Why Blue Horse?"
+    initHorseModal();
 });
 
-function initMarbleBackground() {
-    return;
+function initHorseModal() {
+    const modal = document.getElementById('horse-modal');
+    const openBtn = document.getElementById('open-horse-modal');
+    const closeBtn = document.getElementById('close-horse-modal');
+
+    if (!modal || !openBtn) return;
+
+    function openModal() {
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    function closeModal() {
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    openBtn.addEventListener('click', openModal);
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
+
+    // Close modal when clicking outside modal-card backdrop
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
 }

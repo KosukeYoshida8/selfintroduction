@@ -1,0 +1,9 @@
+# News Entries (Format: YYYY.MM.DD | Content)
+# Edit or add lines below. Comments starting with # are ignored.
+
+2026.10.01 | Got a poster award at NIPS Primate Neuroscience Research Meeting.
+2026.09.30 | Received a JSPS DC1.
+2026.09.29 | Received a research scholarship from The Nakatani Foundation.
+2026.03.25 | Gave a talk at Symposium on Contrarianism in Kyoto.
+2026.01.10 | Received a grant for organizing a conference from Japanese Neural Network Society.
+2025.12.01 | Joined WINGS-CFS.

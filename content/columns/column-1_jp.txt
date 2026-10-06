@@ -1,0 +1,6 @@
+title: 社会相互作用の計算モデリングについて
+date: 2026.04
+tag: コラム #1
+summary: Placeholder
+---
+###Placeholder
